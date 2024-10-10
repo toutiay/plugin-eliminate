@@ -1,0 +1,36 @@
+.info {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+
+.layout {
+    border-bottom: 1px solid #333;
+    padding: 10px;
+    /* display: flex; */
+}
+
+.btn {
+    background: green;
+}
+
+.btn1 {
+    background: orange;
+    color: black;
+}
+
+.link {
+    background-color: green;
+    cursor: pointer;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.input {
+    width: 300px;
+}

@@ -1,0 +1,51 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "plugin-eliminate",
+    "description": "i18n:plugin-eliminate.description",
+    "main": "./dist/main.js",
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^16.0.1",
+        "typescript": "^4.3.4"
+    },
+    "panels": {
+        "eliminatets": {
+            "title": "功能剔除",
+            "type": "dockable",
+            "main": "dist/panels/default/eliminatets.js",
+            "size": {
+                "min-width": 500,
+                "min-height": 300,
+                "width": 500,
+                "height": 600
+            }
+        }
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "功能剔除",
+                "label": "选择性剔除插件",
+                "message": "eliminatets"
+            }
+        ],
+        "messages": {
+            "eliminatets": {
+                "methods": [
+                    "eliminatets"
+                ]
+            }
+        }
+    },
+    "author": "Cocos Creator",
+    "editor": ">=3.7.3",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0",
+        "vue": "^3.4.31"
+    }
+}

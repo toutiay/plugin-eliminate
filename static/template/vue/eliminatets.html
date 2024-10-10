@@ -1,0 +1,19 @@
+<div style="width: 500px;">
+    <div class="info">
+        <div class="scrollable-list" style="width: 500px; height: 300px; overflow-y: auto;">
+            <!-- 这里将由 Vue 动态生成列表项 -->
+            <div v-for="item in listItems" :key="item.id" class="list-item">
+                <input type="checkbox" v-model="item.checked" @change="onItemChecked(item)">
+                <ui-label>{{ item.label }}</ui-label>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="center">
+        <ui-button class="btn center" v-on:click="refresh" style="width: 50px;">刷新</ui-button>
+    </div>
+    <br />
+    <!-- <div class="center">
+        <span>已选择 {{ selectedCount }} 项</span>
+    </div> -->
+</div>
